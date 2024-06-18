@@ -3,13 +3,21 @@ from databases import Database
 import mysql.connector
 
 # Configuración de la conexión a la base de datos escribdream_prueba_5 en localhost
+# db_config = {
+#     'host': 'db5015971926.hosting-data.io',
+#     'user': 'dbu5608856',
+#     'password': 'EscribSueno87',
+#     # 'database': 'proyect_escribdream'
+#     'database': 'dbs13013259',
+#     'port': '3306'
+# }
+
 db_config = {
-    'host': 'db5015971926.hosting-data.io',
-    'user': 'dbu5608856',
-    'password': 'EscribSueno87',
-    # 'database': 'proyect_escribdream'
-    'database': 'dbs13013259',
-    'port': '3306'
+    'host': '172.19.0.2',
+    'user': 'root',
+    'password': '',
+    'database': 'escribdream_mysql',
+    'port': '3000'
 }
 
 DATABASE_URL = f"mysql://{db_config['user']}:{db_config['password']}@{db_config['host']}/{db_config['database']}"
