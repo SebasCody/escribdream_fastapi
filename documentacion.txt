@@ -1,0 +1,23 @@
+Comandos usados para instalar el framework FASTAPI y las dependencias necesarias
+fastapi
+uvicorn
+databases
+pydantic
+mysqlclient
+aiomysql
+
+
+
+Abrimos un entorno virtual para que no haya conflicto con otras versiones de python
+
+py -m venv venv_3
+.\venv_3\Scripts\activate
+
+pip install fastapi[all] uvicorn databases asyncpg pydantic mysqlclient aiomysql "passlib[bcrypt]"
+pip install pyjwt passlib
+pip install pydantic
+pip install mysql-connector-python
+pip install google-auth google-auth-oauthlib google-auth-httplib2
+pip install requests
+pip install google-api-python-client
+pip install pdfkit

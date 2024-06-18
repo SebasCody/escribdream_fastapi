@@ -1,0 +1,58 @@
+<!-- plantilla.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{titulo_libro}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+            page-break-after: avoid;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        h3 {
+            font-size: 1.75em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .chapter {
+            page-break-before: always;
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{titulo_libro}</h1>
+    <h3>Por {autor_libro}</h3>
+    <hr>
+    {contenido}
+</body>
+
+</html>
