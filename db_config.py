@@ -4,11 +4,11 @@ import mysql.connector
 
 # Configuración de la conexión a la base de datos escribdream_prueba_5 en localhost
 db_config = {
-    'host': '127.0.0.1',
-    'user': 'root',
-    'password': '',
+    'host': 'db5015971926.hosting-data.io',
+    'user': 'dbu5608856',
+    'password': 'EscribSueno87',
     # 'database': 'proyect_escribdream'
-    'database': 'escribdream_prueba_7'
+    'database': 'dbs13013259'
 }
 
 DATABASE_URL = f"mysql://{db_config['user']}:{db_config['password']}@{db_config['host']}/{db_config['database']}"
