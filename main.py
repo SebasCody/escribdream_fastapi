@@ -15,14 +15,14 @@ from endpoints_escaletas import router as escaletas_router
 from endpoints_secciones_escaleta import router as secciones_escaleta_router
 from endpoint_login_register import router as login_router
 
-origins = [
-    "http://127.0.0.1:57628",  
-    "http://localhost:60369",
-    "http://127.0.0.1:60369",
-    "http://localhost:57628",
-    "http://localhost"
+# origins = [
+#     "http://127.0.0.1:57628",  
+#     "http://localhost:60369",
+#     "http://127.0.0.1:60369",
+#     "http://localhost:57628",
+#     "http://localhost"
     
-]
+# ]
 
 app.include_router(usuarios_router)
 app.include_router(proyectos_router)
@@ -56,4 +56,4 @@ app.add_middleware(
 
 if __name__ == "__main__":
     
-    uvicorn.run("main:app", host="0.0.0.0", port=10000, log_level="info")
+    uvicorn.run("main:app", host="0.0.0.0", port=4000, log_level="info")
