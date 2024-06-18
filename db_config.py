@@ -8,7 +8,8 @@ db_config = {
     'user': 'dbu5608856',
     'password': 'EscribSueno87',
     # 'database': 'proyect_escribdream'
-    'database': 'dbs13013259'
+    'database': 'dbs13013259',
+    'port': '3306'
 }
 
 DATABASE_URL = f"mysql://{db_config['user']}:{db_config['password']}@{db_config['host']}/{db_config['database']}"
@@ -19,7 +20,8 @@ def connectToDatabase():
         host=db_config['host'],
         user=db_config['user'],
         password=db_config['password'],
-        database=db_config['database']
+        database=db_config['database'],
+        port=db_config['port']
     )
 
     return connection
